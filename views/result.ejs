@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/resultStyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generated Caption</h1>
+
+        <!-- Displaying the uploaded image -->
+        <div class="image-container">
+            <img src="/uploads/<%= filename %>" id="uploadedImage" alt="Uploaded Image">
+        </div>
+
+        <!-- Caption Display -->
+        <p id="generatedCaption" class="caption">Your caption will appear here...</p>
+
+
+        <!-- Text to Speech Button -->
+        <button id="convertToAudioButton" class="button">Convert Caption to Audio</button>
+
+        <!-- Go Back Button -->
+        <form action="/results" method="POST">
+            <button class="button back-button">Go Back</button>
+        </form>
+    </div>
+</body>
+</html>
